@@ -1,0 +1,40 @@
+.issue {
+  font-size: 1.6rem;
+  position: relative;
+  height: 20rem;
+  width: 45rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border-radius: .8rem;
+  padding: 2.5rem;
+  border: #ccc solid .1rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    margin: auto;
+    margin-bottom: 2rem;
+    overflow-y: auto;
+    height: 40rem;
+    text-align: justify;
+  }
+
+  &__footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 1.5rem;
+    width: 90%;
+    color: #ccc;
+    font-size: 1.4rem;
+    padding-top: .5rem;
+    border-top: .1rem solid #ccc;
+  }
+}

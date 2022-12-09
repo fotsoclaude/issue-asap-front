@@ -1,0 +1,52 @@
+<section class="add-issue">
+  <form  [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)" class="form">
+    <h2 class="heading-primary">Signaler un incident</h2>
+    <div class="form__divider">
+      <p>Informations</p>
+    </div>
+    <div class="form__group">
+      <label for="name" class="form__label">Entrez votre nom</label>
+      <input id="name" type="text" class="form__input" formControlName="name">
+    </div>
+    <div class="form__group">
+      <label for="email" class="form__label">Entrez votre email</label>
+      <input id="email" type="text" class="form__input" formControlName="email">
+    </div>
+    <div class="form__group">
+      <label for="phoneNumber" class="form__label">Téléphone</label>
+      <input id="phoneNumber" type="text" class="form__input" formControlName="phoneNumber">
+    </div>
+    <div class="form__group">
+      <label for="town" class="form__label">Ville</label>
+      <input id="town" type="text" class="form__input" formControlName="town">
+    </div>
+    <div class="form__group">
+      <label for="address" class="form__label">Adresse</label>
+      <input id="address" type="text" class="form__input" formControlName="address">
+    </div>
+    <div class="form__group">
+      <label for="issueTypeId" class="form__label">Type d'issue</label>
+      <select name="issueTypeId"  id="issueTypeId" class="form__select" formControlName="issueTypeId">
+        <option value="TFzdgMiGMkGe93H8s" selected>Mot de passe oublié</option>
+        <option value="8wf5eWbj5eFifrcMy" selected>Notes invalides</option>
+      </select>
+    </div>
+    <div class="form__group">
+      <label for="issueCanalType" class="form__label">Canal de réponse</label>
+      <select name="issueCanalType" id="issueCanalType" class="form__select" formControlName="issueCanalType">
+        <option value="SMS" selected="selected">SMS</option>
+        <option value="WHATSAPP">WhatSapp</option>
+        <option value="EMAIL">Email</option>
+      </select>
+    </div>
+    <div class="form__group">
+      <label for="issueMessage" class="form__label">Quel est le problème ?</label>
+      <textarea id="issueMessage" class="form__textarea" formControlName="issueMessage"></textarea>
+    </div>
+    <button class="form-submit" type="submit">Envoyer</button>
+    <button class="next" [routerLink]="['/list']">Consulter les incidents</button>
+  </form>
+</section>
+<section class="copy">
+  <p>By FOTSO Claude</p>
+</section>

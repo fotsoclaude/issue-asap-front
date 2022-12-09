@@ -1,0 +1,15 @@
+<div class="issue">
+  <div class="issue__header">
+    <h3 class="heading-tertiary">{{ issue.description }}</h3>
+  </div>
+  <div class="issue__content">
+    Statut : {{ issue.status }} <br>
+    Mode de réponse : {{ issue.canalType }}
+  </div>
+  <div class="issue__footer">
+    <div class="issue__footer-container">
+      <div class="issue__author"><p>Auteur : {{ issue.customerRef }}</p></div>
+      <div class="issue__author"><p>Créé le : {{ issue._createdAt | date : 'dd MMMM yyyy' }}</p></div>
+    </div>
+  </div>
+</div>

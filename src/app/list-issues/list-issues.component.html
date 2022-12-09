@@ -1,0 +1,6 @@
+<div class="create">
+  <button type="button" class="next" [routerLink]="['/create']" routerLinkActive="active" >Ajouter un incident</button>
+</div>
+<div class="issue-list">
+  <app-issue *ngFor="let issue of issues" [issue]="issue"></app-issue>
+</div>

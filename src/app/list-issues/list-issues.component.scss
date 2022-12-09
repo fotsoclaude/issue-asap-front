@@ -1,0 +1,11 @@
+.issue-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.create {
+  width: 40%;
+  margin: auto;
+}
